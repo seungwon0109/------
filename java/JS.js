@@ -63,3 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+function openPage(url) {
+  window.open(url, '_blank');
+}
