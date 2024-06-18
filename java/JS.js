@@ -42,24 +42,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImg = document.getElementById('lightbox-img');
 
   portfolioBoxes.forEach((box) => {
-      box.addEventListener('click', (e) => {
-          e.preventDefault();
-          const imgSrc = box.querySelector('img').src;
-          const link = box.getAttribute('href'); // Use href attribute to get the link
-          lightboxImg.src = imgSrc;
-          lightboxImg.setAttribute('data-link', link);
-          lightbox.classList.add('show');
-      });
+    box.addEventListener('click', (e) => {
+      e.preventDefault();
+      const imgSrc = box.querySelector('img').src;
+      const link = box.getAttribute('href'); // Use href attribute to get the link
+      lightboxImg.src = imgSrc;
+      lightboxImg.setAttribute('data-link', link);
+      lightbox.classList.add('show');
+    });
   });
 
   lightboxImg.addEventListener('click', () => {
-      const link = lightboxImg.getAttribute('data-link');
-      window.location.href = link;
+    const link = lightboxImg.getAttribute('data-link');
+    window.location.href = link;
   });
 
   lightbox.addEventListener('click', (e) => {
-      if (e.target !== lightboxImg) {
-          lightbox.classList.remove('show');
-      }
+    if (e.target !== lightboxImg) {
+      lightbox.classList.remove('show');
+    }
   });
 });

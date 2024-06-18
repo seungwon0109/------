@@ -23,6 +23,46 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.masthead h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 20px 0;
+  line-height: 1.2;
+}
+
+.masthead p {
+  font-size: 1.25em;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.masthead a {
+  text-decoration: none;
+  color: #ffcc00;
+  font-size: 2em;
+  margin-top: 20px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.masthead a:hover {
+  color: #fff;
+}
+
+.masthead h3,
+.masthead h4 {
+  margin: 10px 0;
+}
+
+.masthead h3 {
+  font-size: 1.75em;
+  color: #ffcc00;
+}
+
+.masthead h4 {
+  font-size: 1.5em;
+}
+
 /*상단바 위치*/
 .container,
 .container-fluid,
@@ -1862,4 +1902,30 @@ header.masthead .h1 {
 #portfolio .portfolio-box .portfolio-box-caption .project-category,
 #portfolio .portfolio-box .portfolio-box-caption .project-name {
   padding: 0.5rem;
+}
+
+footer {
+  background-color: #dee2e6; /* 배경색 */
+  padding: 20px 0; /* 내부 여백 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  position: fixed; /* 화면 하단 고정 */
+  bottom: 0; /* 화면 하단에 배치 */
+  width: 100%; /* 전체 너비 */
+}
+
+/* 컨테이너 스타일 */
+.container {
+  max-width: 960px; /* 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 0 15px; /* 내부 여백 */
+}
+
+.small {
+  font-size: 0.875em;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.text-muted {
+  color: #6c757d;
 }
