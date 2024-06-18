@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QRCode 데모</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="qrcode.js"></script>
+    <script src="qrfunction.js"></script>
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>QR Code Generator</h1>
+      <p>
+        <a href="https://davidshimjs.github.io/qrcodejs/"> qrcode.js </a>이용
+      </p>
+    </header>
+
+    <main class="container">
+      <div class="box-left">
+        <div class="box-input">
+          <label>QRCode에 넣을 정보를 입력하세요</label> <br />
+          <table>
+            <tr>
+              <td><label for="product">제품명</label></td>
+              <td><input type="text" id="product" value="iphone" /></td>
+            </tr>
+            <tr>
+              <td><label for="no">수량</label></td>
+              <td><input type="number" id="no" value="1" /></td>
+            </tr>
+            <tr>
+              <td><label for="price">가격</label></td>
+              <td><input type="number" id="price" value="1000000" /></td>
+            </tr>
+            <tr>
+              <td><label for="url">URL</label></td>
+              <td>
+                <input id="url" type="url" value="http://cris.joongbu.ac.kr" />
+              </td>
+            </tr>
+          </table>
+          <br />
+
+          <button onclick="clicked()">확인</button>
+          <button onclick="erase()">QRCode 지우기</button>
+          <br />
+          <span>QRCode를 클릭하면 지워집니다</span>
+        </div>
+
+        <div><span>QRstring:</span> <span id="qrstring"></span> <br /></div>
+
+        <div class="box-output">
+          <p><b> QR코드에 입력되는 정보 </b></p>
+          <table>
+            <tr>
+              <td><label for="product">제품명</label></td>
+              <td><span id="product_info"></span></td>
+            </tr>
+            <tr>
+              <td><label for="no">수량</label></td>
+              <td><span id="no_info"></span></td>
+            </tr>
+            <tr>
+              <td><label for="price">가격</label></td>
+              <td><span id="price_info"></span></td>
+            </tr>
+            <tr>
+              <td><label for="url">URL</label></td>
+              <td><span id="url_info"></span></td>
+            </tr>
+            <tr>
+              <td>현재시간</td>
+              <td><span id="ctime_info"></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div id="output" class="box-qr" onclick="erase()"></div>
+    </main>
+  </body>
+</html>

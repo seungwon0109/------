@@ -1,0 +1,23 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.box-left {
+  float: left;
+  width: 45%;
+}
+
+.box-input {
+  background-color: aquamarine;
+}
+
+.box-output {
+  background-color: pink;
+}
+
+.box-qr {
+  margin-top: 30px;
+  float: right;
+  width: 45%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBookList</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="display-4 text-center"> <i class="bi bi-book-half text-primary"></i> My<span class="text-primary">Book</span>List</h1>
+
+    <form id="book-form">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" id="author" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" id="isbn" class="form-control">
+      </div>
+      
+      <div class="d-grid gap-2 mt-4">
+        <input type="submit" value="Add Book" class="btn btn-primary">
+      </div>
+    </form>
+
+    <table class="table table-striped mt-4">
+      <thead class="table-dark">
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+        
+      </tbody>
+    </table>
+
+
+
+  </div>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
